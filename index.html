@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: yellowgreen;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1jLXHb4jQX21wEf-jhnx2BD5LBGQWjY1dDQ&s");
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-attachment: fixed;
+      }
+      #grad1 {
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(
+          to top right,
+          white,
+          lavender,
+          plum,
+          magenta,
+          blueviolet,
+          purple
+        );
+
+        text-align: center;
+        margin: auto;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      @keyframes sigma {
+        0% {
+          background-color: white;
+        }
+        25% {
+          background-color: pink;
+        }
+        50% {
+          background-color: plum;
+        }
+        100% {
+          background-color: deeppink;
+        }
+      }
+      .anime {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        animation-name: sigma;
+        animation-duration: 8s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background Effect</h1>
+    <div id="grad1">Welcome to Codingal</div>
+    <div class="anime">Welcome to Codingal</div>
+  </body>
+</html>
